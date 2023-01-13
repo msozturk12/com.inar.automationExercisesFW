@@ -13,17 +13,7 @@ public class TestCase_02_03_04LoginUser extends BaseTest {
 
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
-    @BeforeSuite
-    public void setUpSuite() {
-        // code that is executed before the entire test suite
-        String URL = ConfigurationReader.getProperty("url");
-        String browser = ConfigurationReader.getProperty("browser");
-        String environment = ConfigurationReader.getProperty("environment");
-        Driver.getDriver().get(URL);
-        System.out.println("::::::Test Information ::::::\n\tURL :" + URL + "\n\tBrowser :" + browser + "\n\tEnvironment :" + environment);
-        BrowserUtils.wait(1);
 
-    }
 
     @Test
     public void test_Case_2_LoginUserWithCorrectEmailAndPassword() {
@@ -41,7 +31,7 @@ public class TestCase_02_03_04LoginUser extends BaseTest {
 
         //Enter correct email address and password
         pages.getLoginPage().setLoginEmailAddress("msozturk12@gmail.com");
-        pages.getLoginPage().setLoginPassword("qwe");
+        pages.getLoginPage().setLoginPassword("asd");
 
         //Click 'login' button
         pages.getLoginPage().clickLoginButton();
@@ -127,9 +117,5 @@ public class TestCase_02_03_04LoginUser extends BaseTest {
         softAssert.assertAll();
     }
 
-    @AfterSuite
-    public void afterTest() {
-        // Perform cleanup tasks or generate test reports here
-        Driver.getDriver().quit();
-    }
+
 }

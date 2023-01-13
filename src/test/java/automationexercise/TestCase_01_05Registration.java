@@ -13,17 +13,7 @@ public class TestCase_01_05Registration extends BaseTest {
 
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
-    @BeforeSuite
-    public void setUpSuite() {
-        // code that is executed before the entire test suite
-        String URL = ConfigurationReader.getProperty("url");
-        String browser = ConfigurationReader.getProperty("browser");
-        String environment = ConfigurationReader.getProperty("environment");
-        Driver.getDriver().get(URL);
-        System.out.println("::::::Test Information ::::::\n\tURL :" + URL + "\n\tBrowser :" + browser + "\n\tEnvironment :" + environment);
-        BrowserUtils.wait(1);
 
-    }
 
     @Test(priority = 0)
     public void TestCase_1_Register_User() {
@@ -44,7 +34,7 @@ public class TestCase_01_05Registration extends BaseTest {
 
 
         //Enter name and email address
-        pages.getLoginPage().setSignupNewUserName("Johnnn");
+        pages.getLoginPage().setSignupNewUserName("Johny");
         pages.getLoginPage().setSignupEmailAddressBox("JohnnOz1234@gmail.com");
 
         // Click 'Signup' button
@@ -97,7 +87,7 @@ public class TestCase_01_05Registration extends BaseTest {
         //String name = pages.getLoginPage().getSignUpName();
 
         String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage,"Logged in as Johnn",
+        softAssert.assertEquals(loggedInAsMessage,"Logged in as Johny",
                 "ERROR : Verify that 'Logged in as username' is visible");
 
         // Click 'Delete Account' button
@@ -144,10 +134,6 @@ public class TestCase_01_05Registration extends BaseTest {
 
     }
 
-    @AfterSuite
-    public void afterTest() {
-        // Perform cleanup tasks or generate test reports here
-        Driver.getDriver().quit();
-    }
+
 
 }
