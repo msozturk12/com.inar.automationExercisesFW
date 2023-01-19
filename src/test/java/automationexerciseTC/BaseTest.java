@@ -1,4 +1,4 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -6,6 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 import utilities.BrowserUtils;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -16,6 +17,7 @@ import java.io.IOException;
 
 public class BaseTest {
     protected Pages pages=new Pages();
+    SoftAssert softAssert=new SoftAssert();
 
     @BeforeSuite
     public void setUpSuite() {

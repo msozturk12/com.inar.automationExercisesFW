@@ -1,4 +1,4 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.annotations.Test;
 

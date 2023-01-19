@@ -1,7 +1,6 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.annotations.Test;
-import utilities.BrowserUtils;
 import utilities.Driver;
 
 public class TestCase_17RemoveProductsFromCart extends BaseTest {

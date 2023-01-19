@@ -31,7 +31,7 @@ public class BrowserUtils {
      * Performs double click action on an element
      * @param element
      */
-    public void doubleClick(WebElement element) {
+    public static void doubleClick(WebElement element) {
         new Actions(Driver.getDriver()).doubleClick(element).build().perform();
     }
 
@@ -122,6 +122,7 @@ public class BrowserUtils {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("window.scrollBy(0," + scroll + ")");
     }
+
 
 
 

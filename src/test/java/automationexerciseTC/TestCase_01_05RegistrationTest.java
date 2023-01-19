@@ -1,18 +1,12 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
-import utilities.Driver;
 
-public class TestCase_01_05Registration extends BaseTest {
+public class TestCase_01_05RegistrationTest extends BaseTest {
 
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
-
 
 
     @Test(priority = 0)
@@ -21,7 +15,7 @@ public class TestCase_01_05Registration extends BaseTest {
 
         //Verify that home page is visible successfull
         String homePageTitle = pages.getHomePage().getHomePageHomeTitle();
-        Assert.assertEquals(homePageTitle, "Home");
+        softAssert.assertEquals(homePageTitle, "Home","ERROR : Test Case 1 - Verify that home page is visible successfull\n");
 
         //Click on 'Signup / Login' button
         pages.getHomePage().clickSignupLoginButton();
@@ -34,7 +28,7 @@ public class TestCase_01_05Registration extends BaseTest {
 
 
         //Enter name and email address
-        pages.getLoginPage().setSignupNewUserName("Johny");
+        pages.getLoginPage().setSignupNewUserName("Johnny");
         pages.getLoginPage().setSignupEmailAddressBox("JohnnOz1234@gmail.com");
 
         // Click 'Signup' button
@@ -64,7 +58,7 @@ public class TestCase_01_05Registration extends BaseTest {
         pages.getSignupPage().setCompanyName("Oracle");
         pages.getSignupPage().setAddress1("TillBurg");
         pages.getSignupPage().setAddress2("Harleem");
-        pages.getSignupPage().setCompanyName("Canada");
+        pages.getSignupPage().setCountry("Canada");
         pages.getSignupPage().setState("Yorkshire");
         pages.getSignupPage().setCity("London");
         pages.getSignupPage().setZipCode("32100");
@@ -75,19 +69,19 @@ public class TestCase_01_05Registration extends BaseTest {
 
         //Verify that 'ACCOUNT CREATED!' is visible
         String accountCreatedMessage = pages.getAccountCreatedPage().getAccountCreatedMessage();
-        softAssert.assertEquals(accountCreatedMessage,"Account Created!",
-                "ERROR : Test Case 1 - Verify that 'ACCOUNT CREATED!' is visible\n" );
+        softAssert.assertEquals(accountCreatedMessage, "ACCOUNT CREATED!",
+                "ERROR : Test Case 1 - Verify that 'ACCOUNT CREATED!' is visible\n");
 
         //Click 'Continue' button
         pages.getAccountCreatedPage().clickContinueButton();
 
-       BrowserUtils.navigateBackAndForwardToDismissAds();
+        //BrowserUtils.navigateBackAndForwardToDismissAds();
 
         //Verify that 'Logged in as username' is visible
         //String name = pages.getLoginPage().getSignUpName();
 
         String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage,"Logged in as Johny",
+        softAssert.assertEquals(loggedInAsMessage, "Logged in as Johnny",
                 "ERROR : Verify that 'Logged in as username' is visible");
 
         // Click 'Delete Account' button
@@ -95,16 +89,17 @@ public class TestCase_01_05Registration extends BaseTest {
 
         //Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
         String accountDeletedMessage = pages.getDeleteAccountPage().getAccountDeletedMessage();
-        softAssert.assertEquals(accountDeletedMessage,"ACCOUNT DELETED!",
+        softAssert.assertEquals(accountDeletedMessage, "ACCOUNT DELETED!",
                 "ERROR :Verify that 'ACCOUNT DELETED!' is visible");
 
         pages.getDeleteAccountPage().clickContinueButton();
+        softAssert.assertAll();
 
 
     }
 
     @Test
-    public void Test_Case_5_RegisterUserWithExistingEmail(){
+    public void Test_Case_5_RegisterUserWithExistingEmail() {
 
         //Verify that home page is visible successfull
         String homePageTitle = pages.getHomePage().getHomePageHomeTitle();
@@ -116,11 +111,11 @@ public class TestCase_01_05Registration extends BaseTest {
 
         //Verify 'New User Signup!' is visible
         String newUserSignUpMessage = pages.getLoginPage().getNewUserSignupMessage();
-        softAssert.assertEquals(newUserSignUpMessage, "Verify 'New User Signup!' is visible",
+        softAssert.assertEquals(newUserSignUpMessage, "New User Signup!",
                 "ERROR : Test Case 5 - Verify 'New User Signup!' is visible\n");
 
         // Enter name and already registered email address
-        pages.getLoginPage().setSignupNewUserName("Johnn");
+        pages.getLoginPage().setSignupNewUserName("Johnnn");
         pages.getLoginPage().setSignupEmailAddressBox("msozturk1jklkk2@gmail.com");
 
         //Click 'Signup' button
@@ -128,12 +123,11 @@ public class TestCase_01_05Registration extends BaseTest {
 
 
         //Verify error 'Email Address already exist!' is visible
-        String emailAddressAlreadyExistErrorMessage=pages.getLoginPage().getEmailAddressAlreadyExistErrorMessage();
-        softAssert.assertEquals(emailAddressAlreadyExistErrorMessage,"Email Address already exist!",
-               "ERROR : Test Case 5 - Verify error 'Email Address already exist!' is visible\n" );
-
+        String emailAddressAlreadyExistErrorMessage = pages.getLoginPage().getEmailAddressAlreadyExistErrorMessage();
+        softAssert.assertEquals(emailAddressAlreadyExistErrorMessage, "Email Address already exist!",
+                "ERROR : Test Case 5 - Verify error 'Email Address already exist!' is visible\n");
+        softAssert.assertAll();
     }
-
 
 
 }

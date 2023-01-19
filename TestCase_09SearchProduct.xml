@@ -4,14 +4,12 @@
     <listeners>
         <listener class-name="utilities.Listeners"/>
     </listeners>
-
     <test verbose="2" preserve-order="true"
-          name="C:/Seleniumm/automationexerciseTC/src/test/java/automationexerciseTC/TestCase_01_05Registration.java">
+          name="C:/Seleniumm/automationexerciseTC/src/test/java/automationexerciseTC/TestCase_09SearchProduct.java">
         <classes>
-            <class name="automationexerciseTC.TestCase_01_05RegistrationTest">
+            <class name="automationexerciseTC.TestCase_09SearchProduct">
                 <methods>
-                    <include name="TestCase_1_Register_User"/>
-                    <include name="Test_Case_5_RegisterUserWithExistingEmail"/>
+                    <include name="TestCase_09_Search_Product"/>
                 </methods>
             </class>
         </classes>

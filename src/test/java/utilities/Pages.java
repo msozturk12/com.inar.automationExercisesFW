@@ -10,13 +10,27 @@ public class Pages {
     private AccountCreatedPage accountCreatedPage;
     private DeleteAccountPage deleteAccountPage;
 
+    private ContactUsPage contactUsPage;
+
+    private ProductDetailPage productDetailPage;
+    private ViewCartPage viewCartPage;
+
+    private CheckOutPage checkOutPage;
+
+    private PaymentPage paymentPage;
+
     public Pages() {
         this.homePage = new HomePage();
         this.loginPage = new LoginPage();
         this.signupPage = new SignUpPage();
         this.productsPage = new ProductsPage();
-        this.accountCreatedPage=new AccountCreatedPage();
-        this.deleteAccountPage=new DeleteAccountPage();
+        this.accountCreatedPage = new AccountCreatedPage();
+        this.deleteAccountPage = new DeleteAccountPage();
+        this.contactUsPage = new ContactUsPage();
+        this.productDetailPage = new ProductDetailPage();
+        this.viewCartPage = new ViewCartPage();
+        this.checkOutPage = new CheckOutPage();
+        this.paymentPage = new PaymentPage();
     }
 
     public SignUpPage getSignupPage() {
@@ -41,5 +55,25 @@ public class Pages {
 
     public DeleteAccountPage getDeleteAccountPage() {
         return deleteAccountPage;
+    }
+
+    public ContactUsPage getContactUsPage() {
+        return contactUsPage;
+    }
+
+    public ProductDetailPage getProductDetailPage() {
+        return productDetailPage;
+    }
+
+    public ViewCartPage getViewCartPage() {
+        return viewCartPage;
+    }
+
+    public CheckOutPage getCheckOutPage() {
+        return checkOutPage;
+    }
+
+    public PaymentPage getPaymentPage() {
+        return paymentPage;
     }
 }

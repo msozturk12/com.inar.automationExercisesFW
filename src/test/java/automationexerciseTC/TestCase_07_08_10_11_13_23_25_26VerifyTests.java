@@ -1,4 +1,4 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -124,6 +124,7 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         String youHaveBeenSuccessfullySubscribedMessage = pages.getViewCartPage().getYouHaveBeenSuccessfullySubscribedMessageViewCartPage();
         softAssert.assertEquals(youHaveBeenSuccessfullySubscribedMessage, "You have been successfully subscribed!",
                 "ERROR : Test Case 11 - Verify success message 'You have been successfully subscribed!");
+
         softAssert.assertAll();
 
     }

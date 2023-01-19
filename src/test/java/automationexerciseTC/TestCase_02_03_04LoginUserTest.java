@@ -1,15 +1,11 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import utilities.BrowserUtils;
-import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class TestCase_02_03_04LoginUser extends BaseTest {
+public class TestCase_02_03_04LoginUserTest extends BaseTest {
 
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
@@ -31,7 +27,7 @@ public class TestCase_02_03_04LoginUser extends BaseTest {
 
         //Enter correct email address and password
         pages.getLoginPage().setLoginEmailAddress("msozturk12@gmail.com");
-        pages.getLoginPage().setLoginPassword("asd");
+        pages.getLoginPage().setLoginPassword("qwe");
 
         //Click 'login' button
         pages.getLoginPage().clickLoginButton();
@@ -82,7 +78,7 @@ public class TestCase_02_03_04LoginUser extends BaseTest {
         softAssert.assertAll();
 
     }
-
+    @Test
     public void test_Case_4_LogOutUser() {
         //Verify that home page is visible successfull
         String homePageTitle = pages.getHomePage().getHomePageHomeTitle();

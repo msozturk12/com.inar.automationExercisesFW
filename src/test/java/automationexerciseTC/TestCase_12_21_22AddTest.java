@@ -1,4 +1,4 @@
-package automationexercise;
+package automationexerciseTC;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -32,9 +32,31 @@ public class TestCase_12_21_22AddTest extends BaseTest {
         pages.getProductsPage().clickCartButton();
 
         //Verify both products are added to Cart
-
+        boolean areProductsVisible=pages.getViewCartPage().areProductsVisible();
+        softAssert.assertTrue(areProductsVisible,
+                "ERROR : Test Case 12 - Verify both products are added to Cart\n");
 
         //Verify their prices, quantity and total price
+
+        String products1Price = pages.getViewCartPage().getProduct1Price();
+        softAssert.assertEquals(products1Price,"Rs. 500");
+
+        String products1Quantity = pages.getViewCartPage().getProduct1Quantity();
+        softAssert.assertEquals(products1Quantity,"1");
+
+        String products1TotalPrice = pages.getViewCartPage().getProduct1TotalPrice();
+        softAssert.assertEquals(products1TotalPrice,"Rs. 500");
+
+        String products2Price = pages.getViewCartPage().getProduct2Price();
+        softAssert.assertEquals(products2Price,"Rs. 1000");
+
+        String products2Quantity = pages.getViewCartPage().getProduct2Quantity();
+        softAssert.assertEquals(products2Quantity,"1");
+
+        String products2TotalPrice = pages.getViewCartPage().getProduct2TotalPrice();
+        softAssert.assertEquals(products2TotalPrice,"Rs. 1000");
+
+        softAssert.assertAll();
 
 
     }
@@ -47,7 +69,7 @@ public class TestCase_12_21_22AddTest extends BaseTest {
 
         //Verify user is navigated to ALL PRODUCTS page successfully
         softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://automationexercise.com/products",
-                "ERROR : Test Case 9 - Verify user is navigated to ALL PRODUCTS page successfully\n ");
+                "ERROR : Test Case 21 - Verify user is navigated to ALL PRODUCTS page successfully\n ");
 
         //Click on 'View Product' button
         pages.getProductsPage().clickViewProductOfFirstProductButton();

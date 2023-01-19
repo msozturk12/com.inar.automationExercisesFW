@@ -5,8 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.time.Duration;
+import java.util.Set;
 
 public class Driver {
 
@@ -48,6 +51,11 @@ public class Driver {
                     chromeOptions.addExtensions(file);
                     chromeOptions.addArguments("--start-maximized");
                     driverPool.set(new ChromeDriver(chromeOptions));
+                    Set<String> windowHandles = driverPool.get().getWindowHandles();
+                    String lastWindow = windowHandles.toArray()[windowHandles.size()-1].toString();
+                    driverPool.get().switchTo().window(lastWindow).close();
+                    driverPool.get().switchTo().window(windowHandles.toArray()[0].toString());
+                    WebDriverWait wait = new WebDriverWait(driverPool.get(),10);
                     break;
                 case "chromeheadless":
                     //to run chrome without interface (headless mode)
