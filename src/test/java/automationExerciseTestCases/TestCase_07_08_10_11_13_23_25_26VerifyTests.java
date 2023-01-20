@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -120,6 +120,7 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         pages.getViewCartPage().setSubscribeEmail("supernova@gmail.com");
         pages.getViewCartPage().clickArrowButton();
 
+        BrowserUtils.wait(2);
         //Verify success message 'You have been successfully subscribed!' is visible
         String youHaveBeenSuccessfullySubscribedMessage = pages.getViewCartPage().getYouHaveBeenSuccessfullySubscribedMessageViewCartPage();
         softAssert.assertEquals(youHaveBeenSuccessfullySubscribedMessage, "You have been successfully subscribed!",
@@ -171,8 +172,8 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         pages.getHomePage().clickSignupLoginButton();
 
         //Fill all details in Signup and create account
-        pages.getLoginPage().setSignupNewUserName("Zarah");
-        pages.getLoginPage().setSignupEmailAddressBox("Zara3212@gmail.com");
+        pages.getLoginPage().setSignupNewUserName("Zara");
+        pages.getLoginPage().setSignupEmailAddressBox("Sare32@gmail.com");
         pages.getLoginPage().clickSignupButton();
 
         pages.getSignupPage().selectTitleWomen();
@@ -209,7 +210,7 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
 
         //Verify ' Logged in as username' at top
         String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as Zarah",
+        softAssert.assertEquals(loggedInAsMessage, "Logged in as Zara",
                 "ERROR : Verify that 'Logged in as username' is visible");
 
         //Add products to cart

@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -44,4 +44,6 @@ public class BaseTest {
         FileUtils.copyFile(source ,file);
         return file.getPath();
     }
+
+
 }

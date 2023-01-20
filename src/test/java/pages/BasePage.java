@@ -23,4 +23,5 @@ public class BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator))).click();
     }
 
+
 }

@@ -5,15 +5,15 @@
         <listener class-name="utilities.Listeners"/>
     </listeners>
 
-    <test verbose="2" preserve-order="true" name="C:/Seleniumm/automationexerciseTC/src/test/java/automationexerciseTC">
+    <test verbose="2" preserve-order="true" name="C:/Seleniumm/automationExerciseTestCases/src/test/java/automationExerciseTestCases">
         <classes>
-            <class name="automationexerciseTC.TestCase_01_05RegistrationTest">
+            <class name="automationExerciseTestCases.TestCase_01_05RegistrationTest">
                 <methods>
                     <include name="TestCase_1_Register_User"/>
                     <include name="Test_Case_5_RegisterUserWithExistingEmail"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_02_03_04LoginUserTest">
+            <class name="automationExerciseTestCases.TestCase_02_03_04LoginUserTest">
                 <methods>
                     <include name="test_Case_2_LoginUserWithCorrectEmailAndPassword"/>
                     <include name="test_Case_3_LoginUserWithIncorrectEmailAndPassword"/>
@@ -21,12 +21,12 @@
 
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_06_ContactUsForm">
+            <class name="automationExerciseTestCases.TestCase_06_ContactUsForm">
                 <methods>
                     <include name="test_Case_06_ContactUsForm"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_07_08_10_11_13_23_25_26VerifyTests">
+            <class name="automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests">
                 <methods>
                     <include name="testCase_07_VerifyTestCasesPage"/>
                     <include name="testCase_08_VerifyAllProductsAndProductDetailPage"/>
@@ -38,42 +38,42 @@
                     <include name="testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_09SearchProduct">
+            <class name="automationExerciseTestCases.TestCase_09SearchProduct">
                 <methods>
                     <include name="TestCase_09_Search_Product"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_12_21_22AddTest">
+            <class name="automationExerciseTestCases.TestCase_12_21_22AddTest">
                 <methods>
                     <include name="TestCase_12_Add_ProductsIn_Cart"/>
                     <include name="TestCase_21_Add_ReviewOnProducts"/>
                     <include name="testCase_22_AddToCartFromRecommendedItems"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_14_15_16PlaceOrderTest">
+            <class name="automationExerciseTestCases.TestCase_14_15_16PlaceOrderTest">
                 <methods>
                     <include name="testCase_14PlaceOrderRegisterWhileCheckout"/>
                     <include name="testCase_15PlaceOrderRegisterBeforeCheckout"/>
                     <include name="testCase_16PlaceOrderLoginBeforeCheckout"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_17RemoveProductsFromCart">
+            <class name="automationExerciseTestCases.TestCase_17RemoveProductsFromCart">
                 <methods>
                     <include name="testCase_17RemoveProductsFromCart"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_18_19ViewTest">
+            <class name="automationExerciseTestCases.TestCase_18_19ViewTest">
                 <methods>
                     <include name="testCase18_ViewCategoryProducts"/>
                     <include name="testCase19_ViewCartBrandProducts"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_20_SearchProductsAndVerifyCartAfterLogin">
+            <class name="automationExerciseTestCases.TestCase_20_SearchProductsAndVerifyCartAfterLogin">
                 <methods>
                     <include name="testCase_20SearchProductsAndVerifyCartAfterLogin"/>
                 </methods>
             </class>
-            <class name="automationexerciseTC.TestCase_24DownloadInvoiceAfterPurchaseOrder">
+            <class name="automationExerciseTestCases.TestCase_24DownloadInvoiceAfterPurchaseOrder">
                 <methods>
                     <include name="testcase_24Download_Invoice_After_Purchase_Order"/>
                 </methods>

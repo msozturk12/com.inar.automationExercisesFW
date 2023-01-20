@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -28,7 +28,7 @@ public class TestCase_01_05RegistrationTest extends BaseTest {
 
 
         //Enter name and email address
-        pages.getLoginPage().setSignupNewUserName("Johnny");
+        pages.getLoginPage().setSignupNewUserName("Johny");
         pages.getLoginPage().setSignupEmailAddressBox("JohnnOz1234@gmail.com");
 
         // Click 'Signup' button
@@ -53,7 +53,7 @@ public class TestCase_01_05RegistrationTest extends BaseTest {
         pages.getSignupPage().selectCheckboxReceiveSpecialOffersFromOurPartners();
 
         //Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-        pages.getSignupPage().setFirstName("Mesut");
+        pages.getSignupPage().setFirstName("Johny");
         pages.getSignupPage().setLastName("OZTURK");
         pages.getSignupPage().setCompanyName("Oracle");
         pages.getSignupPage().setAddress1("TillBurg");
@@ -81,7 +81,7 @@ public class TestCase_01_05RegistrationTest extends BaseTest {
         //String name = pages.getLoginPage().getSignUpName();
 
         String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as Johnny",
+        softAssert.assertEquals(loggedInAsMessage, "Logged in as Johny",
                 "ERROR : Verify that 'Logged in as username' is visible");
 
         // Click 'Delete Account' button

@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,9 +10,9 @@ public class TestCase_02_03_04LoginUserTest extends BaseTest {
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
 
-
     @Test
     public void test_Case_2_LoginUserWithCorrectEmailAndPassword() {
+
         //Verify that home page is visible successfull
         String homePageTitle = pages.getHomePage().getHomePageHomeTitle();
         Assert.assertEquals(homePageTitle, "Home");
@@ -26,8 +26,8 @@ public class TestCase_02_03_04LoginUserTest extends BaseTest {
                 "ERROR : Test Case 2 - Verify 'Login to your account' is visible\n");
 
         //Enter correct email address and password
-        pages.getLoginPage().setLoginEmailAddress("msozturk12@gmail.com");
-        pages.getLoginPage().setLoginPassword("qwe");
+        pages.getLoginPage().setLoginEmailAddress("Harry32@gmail.com");
+        pages.getLoginPage().setLoginPassword("1234");
 
         //Click 'login' button
         pages.getLoginPage().clickLoginButton();
@@ -63,9 +63,9 @@ public class TestCase_02_03_04LoginUserTest extends BaseTest {
         softAssert.assertEquals(logInToYourAccountMessage, "Login to your account",
                 "ERROR : Test Case 2 - Verify 'Login to your account' is visible\n");
 
-        //Enter correct email address and password
-        pages.getLoginPage().setLoginEmailAddress("msoz@gmail.com");
-        pages.getLoginPage().setLoginPassword("12as");
+        //Enter incorrect email address and password
+        pages.getLoginPage().setLoginEmailAddress("qwer@gmail.com");
+        pages.getLoginPage().setLoginPassword(",ias,");
 
         //Click 'login' button
         pages.getLoginPage().clickLoginButton();
@@ -78,6 +78,7 @@ public class TestCase_02_03_04LoginUserTest extends BaseTest {
         softAssert.assertAll();
 
     }
+
     @Test
     public void test_Case_4_LogOutUser() {
         //Verify that home page is visible successfull
@@ -93,8 +94,8 @@ public class TestCase_02_03_04LoginUserTest extends BaseTest {
                 "ERROR : Test Case 2 - Verify 'Login to your account' is visible\n");
 
         //Enter correct email address and password
-        pages.getLoginPage().setLoginEmailAddress("msozturk12@gmail.com");
-        pages.getLoginPage().setLoginPassword("qwe");
+        pages.getLoginPage().setLoginEmailAddress("Ron32@gmail.com");
+        pages.getLoginPage().setLoginPassword("1234");
 
         //Click 'login' button
         pages.getLoginPage().clickLoginButton();

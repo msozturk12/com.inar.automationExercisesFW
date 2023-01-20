@@ -52,10 +52,10 @@ public class Driver {
                     chromeOptions.addArguments("--start-maximized");
                     driverPool.set(new ChromeDriver(chromeOptions));
                     Set<String> windowHandles = driverPool.get().getWindowHandles();
-                    String lastWindow = windowHandles.toArray()[windowHandles.size()-1].toString();
-                    driverPool.get().switchTo().window(lastWindow).close();
+                    String lastWindow = windowHandles.toArray()[windowHandles.size() - 1].toString();
+                    driverPool.get().switchTo().window(lastWindow);
                     driverPool.get().switchTo().window(windowHandles.toArray()[0].toString());
-                    WebDriverWait wait = new WebDriverWait(driverPool.get(),10);
+                    WebDriverWait wait = new WebDriverWait(driverPool.get(), 10);
                     break;
                 case "chromeheadless":
                     //to run chrome without interface (headless mode)

@@ -5,14 +5,14 @@
     <listener class-name="utilities.Listeners"/>
   </listeners>
 
-  <test thread-count="2" name="C:/Seleniumm/automationexerciseTC/src/test/java/automationexerciseTC/TestCase_01_05Registration.java(failed)">
+  <test thread-count="2" name="C:/Seleniumm/automationExerciseTestCases/src/test/java/automationExerciseTestCases/TestCase_01_05Registration.java(failed)">
     <classes>
-      <class name="automationexerciseTC.TestCase_01_05RegistrationTest">
+      <class name="automationExerciseTestCases.TestCase_01_05RegistrationTest">
         <methods>
           <include name="TestCase_1_Register_User"/>
           <include name="Test_Case_5_RegisterUserWithExistingEmail"/>
         </methods>
-      </class> <!-- automationexerciseTC.TestCase_01_05RegistrationTest -->
+      </class> <!-- automationExerciseTestCases.TestCase_01_05RegistrationTest -->
     </classes>
-  </test> <!-- C:/Seleniumm/automationexerciseTC/src/test/java/automationexerciseTC/TestCase_01_05Registration.java(failed) -->
+  </test> <!-- C:/Seleniumm/automationExerciseTestCases/src/test/java/automationExerciseTestCases/TestCase_01_05Registration.java(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

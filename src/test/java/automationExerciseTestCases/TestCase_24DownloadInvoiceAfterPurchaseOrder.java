@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
 import utilities.Driver;
@@ -92,7 +92,7 @@ public class TestCase_24DownloadInvoiceAfterPurchaseOrder extends BaseTest {
 
 
         // Enter payment details: Name on Card, Card Number, CVC, Expiration date
-        pages.getPaymentPage().setNameOnCardBox("Zeynep");
+        pages.getPaymentPage().setNameOnCardBox("Zeynepp");
         pages.getPaymentPage().setCardNumberButton("60005421");
         pages.getPaymentPage().setCvcBox("541");
         pages.getPaymentPage().setExpirationBox("11");

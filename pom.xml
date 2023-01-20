@@ -19,7 +19,7 @@
   </build>
   <packaging>jar</packaging>
 
-  <name>automationexerciseTC</name>
+  <name>automationExerciseTestCases</name>
   <url>http://maven.apache.org</url>
 
   <properties>

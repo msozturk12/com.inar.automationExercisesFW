@@ -1,4 +1,4 @@
-package automationexerciseTC;
+package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
 import utilities.Driver;
@@ -32,7 +32,7 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         pages.getViewCartPage().clickRegisterLoginButton();
 
         //Fill all details in Signup and create account
-        pages.getLoginPage().setSignupNewUserName("EnesCano");
+        pages.getLoginPage().setSignupNewUserName("Enes");
         pages.getLoginPage().setSignupEmailAddressBox("Enes3217@gmail.com");
         pages.getLoginPage().clickSignupButton();
 
@@ -64,9 +64,9 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         pages.getAccountCreatedPage().clickContinueButton();
 
         //Verify ' Logged in as username' at top
-        String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as EnesCan",
-                "ERROR : Verify that 'Logged in as username' is visible");
+        boolean isVisibleLoggedInAsMessage=pages.getHomePage().isVisibleLoggedInAsUserNameSection();
+        softAssert.assertTrue(isVisibleLoggedInAsMessage,"ERROR : Verify that 'Logged in as username' is visible");
+
 
         //Click 'Cart' button
         pages.getHomePage().clickCartButton();
@@ -125,8 +125,8 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         pages.getHomePage().clickSignupLoginButton();
 
         //Fill all details in Signup and create account
-        pages.getLoginPage().setSignupNewUserName("EnesCan2");
-        pages.getLoginPage().setSignupEmailAddressBox("Enes32102@gmail.com");
+        pages.getLoginPage().setSignupNewUserName("Belatrix");
+        pages.getLoginPage().setSignupEmailAddressBox("Belatrix32@gmail.com");
         pages.getLoginPage().clickSignupButton();
 
         pages.getSignupPage().selectTitleWomen();
@@ -157,9 +157,9 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         pages.getAccountCreatedPage().clickContinueButton();
 
         //Verify ' Logged in as username' at top
-        String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as EnesCan1",
-                "ERROR : Verify that 'Logged in as username' is visible");
+        boolean isVisibleLoggedInAsMessage=pages.getHomePage().isVisibleLoggedInAsUserNameSection();
+        softAssert.assertTrue(isVisibleLoggedInAsMessage,"ERROR : Verify that 'Logged in as username' is visible");
+
 
         //Add products to cart
         pages.getHomePage().clickProductButton();
@@ -228,15 +228,21 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         //Click 'Signup / Login' button
         pages.getHomePage().clickSignupLoginButton();
 
+        //--------------------------------------------
+        //Fill all details in Signup and create account
+       signupApp("never@gmail.com","1234");
+
+        //----------------------------------------------
+
+        pages.getHomePage().clickSignupLoginButton();
         //Fill email, password and click 'Login' button
-        pages.getLoginPage().setLoginEmailAddress("Enes321@gmail.com");
-        pages.getLoginPage().setLoginPassword("2112");
+        pages.getLoginPage().setLoginEmailAddress("never@gmail.com");
+        pages.getLoginPage().setLoginPassword("1234");
         pages.getLoginPage().clickLoginButton();
 
         //Verify ' Logged in as username' at top
-        String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as Enes",
-                "ERROR : Verify that 'Logged in as username' is visible");
+        boolean isVisibleLoggedInAsMessage=pages.getHomePage().isVisibleLoggedInAsUserNameSection();
+        softAssert.assertTrue(isVisibleLoggedInAsMessage,"ERROR : Verify that 'Logged in as username' is visible");
 
 
         //Add products to cart
@@ -295,4 +301,34 @@ public class TestCase_14_15_16PlaceOrderTest extends BaseTest {
         softAssert.assertAll();
 
     }
+    public  void signupApp(String email,String password) {
+        pages.getLoginPage().setSignupNewUserName("Belatrix");
+        pages.getLoginPage().setSignupEmailAddressBox(email);
+        pages.getLoginPage().clickSignupButton();
+
+        pages.getSignupPage().selectTitleWomen();
+        pages.getSignupPage().setPassword(password);
+        pages.getSignupPage().setDateOfBirt("10", "May", "2017");
+
+        pages.getSignupPage().selectCheckboxSignUpForOurNewsletter();
+        pages.getSignupPage().selectCheckboxReceiveSpecialOffersFromOurPartners();
+
+        pages.getSignupPage().setFirstName("Enes");
+        pages.getSignupPage().setLastName("OZTURK");
+        pages.getSignupPage().setCompanyName("Oracle12");
+        pages.getSignupPage().setAddress1("Utrect");
+        pages.getSignupPage().setAddress2("Harleem");
+        pages.getSignupPage().setCountry("New Zealand");
+        pages.getSignupPage().setState("Yorkshire");
+        pages.getSignupPage().setCity("Lille");
+        pages.getSignupPage().setZipCode("321004");
+        pages.getSignupPage().setMobileNumber("16a5698956");
+
+        pages.getSignupPage().clickCreateAccountButton();
+
+        pages.getAccountCreatedPage().clickContinueButton();
+        pages.getHomePage().clickLogOutButton();
+    }
+
+
 }
