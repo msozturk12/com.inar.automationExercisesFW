@@ -1,9 +1,11 @@
 package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import utilities.Driver;
 
 public class TestCase_24DownloadInvoiceAfterPurchaseOrder extends BaseTest {
+    SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
     @Test
     public void testcase_24Download_Invoice_After_Purchase_Order() {
@@ -35,8 +37,8 @@ public class TestCase_24DownloadInvoiceAfterPurchaseOrder extends BaseTest {
 
         //Fill all details in Signup and create account
         //Enter name and email address
-        pages.getLoginPage().setSignupNewUserName("Zeynep");
-        pages.getLoginPage().setSignupEmailAddressBox("Yujkilop3205@gmail.com");
+        pages.getLoginPage().setSignupNewUserName("Neville");
+        pages.getLoginPage().setSignupEmailAddressBox("Neville32@gmail.com");
         pages.getLoginPage().clickSignupButton();
 
         pages.getSignupPage().selectTitleWomen();
@@ -62,14 +64,14 @@ public class TestCase_24DownloadInvoiceAfterPurchaseOrder extends BaseTest {
         //Verify 'ACCOUNT CREATED!' and click 'Continue' button
         String accountCreatedMessage = pages.getAccountCreatedPage().getAccountCreatedMessage();
         softAssert.assertEquals(accountCreatedMessage, "ACCOUNT CREATED!",
-                "ERROR : Test Case 1 - Verify that 'ACCOUNT CREATED!' is visible\n");
+                "ERROR : Test Case 24 - Verify that 'ACCOUNT CREATED!' is visible\n");
 
         pages.getAccountCreatedPage().clickContinueButton();
 
         //Verify ' Logged in as username' at top
 
         String loggedInAsMessage = pages.getHomePage().getLoggedInAsMessage();
-        softAssert.assertEquals(loggedInAsMessage, "Logged in as Zeynep",
+        softAssert.assertEquals(loggedInAsMessage, "Logged in as Neville",
                 "ERROR : Verify that 'Logged in as username' is visible");
 
         //Click 'Cart' button

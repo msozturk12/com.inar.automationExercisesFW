@@ -1,9 +1,12 @@
 package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import utilities.Driver;
 
 public class TestCase_18_19ViewTest extends BaseTest {
+    SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
+
     @Test
     public void testCase18_ViewCategoryProducts() {
         //Verify that home page is visible successfull

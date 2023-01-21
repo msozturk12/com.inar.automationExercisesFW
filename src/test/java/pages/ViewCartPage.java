@@ -3,6 +3,9 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class ViewCartPage extends BasePage {
 
     @FindBy(css = "div[class='single-widget'] h2")
@@ -63,6 +66,10 @@ public class ViewCartPage extends BasePage {
 
     @FindBy(css = "tr[id='product-3'] p[class='cart_total_price']")
     private WebElement product2TotalPrice;
+
+    @FindBy(xpath = "//h4/a")
+    private List<WebElement> selectedProductsName;
+
 
 
 
@@ -134,4 +141,9 @@ public class ViewCartPage extends BasePage {
     public String getProduct2TotalPrice() {
         return product2TotalPrice.getText();
     }
+
+    public List<String> getSelectedProductsName(){
+        return selectedProductsName.stream().map(s ->s.getText()).collect(Collectors.toList());
+    }
+
 }

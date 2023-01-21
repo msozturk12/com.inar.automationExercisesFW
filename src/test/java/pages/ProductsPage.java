@@ -85,11 +85,11 @@ public class ProductsPage extends BasePage {
     @FindBy(css = "div[class='alert-success alert'] span")
     WebElement thankYouForYourReviewText;
 
+    @FindBy(xpath = "//div[@class='productinfo text-center']//p")
+    private List<WebElement> listOfSearchedProducts;
 
-
-
-
-    //     //
+    @FindBy(css = ".btn.btn-default.add-to-cart")
+    private List<WebElement> addToCartButtonAllProducts;
 
 
     public void searchProduct(String productName) {
@@ -167,13 +167,8 @@ public class ProductsPage extends BasePage {
         return menProductsImages.isDisplayed();
     }
 
-
-    public void clickAddToCartsButtons() {
-        for (WebElement cartButtons : addToCartButtons) {
-            cartButtons.click();
-            continueShoppingButton.click();
-
-        }
+    public List<String> getListOfSearchedProducts() {
+        return listOfSearchedProducts.stream().map(element -> element.getText()).collect(Collectors.toList());
     }
 
     public boolean isDisplayedMenProducts() {
@@ -194,25 +189,35 @@ public class ProductsPage extends BasePage {
     }
 
 
-    public void setNameBox(String name){
+    public void setNameBox(String name) {
         nameBox.sendKeys(name);
     }
 
-    public void setEmailBox(String email){
+    public void setEmailBox(String email) {
         emailBox.sendKeys(email);
     }
 
-    public void setReviewBox(String review){
+    public void setReviewBox(String review) {
         reviewBox.sendKeys(review);
     }
 
-    public void clickSubmitButton(){
+    public void clickSubmitButton() {
         submitButton.click();
     }
 
     public String getThankYouForYourReviewText() {
         return thankYouForYourReviewText.getText();
     }
+
+    public void clickAddToCartOfAllProducts(){
+        for (int i = 0; i <addToCartButtonAllProducts.size(); i+=2) {
+            addToCartButtonAllProducts.get(i).click();
+            continueShoppingButton.click();
+        }
+    }
+
+
+
 }
 
 

@@ -2,62 +2,54 @@ package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.BasePage;
+import utilities.Driver;
 
-public class TestCase_20_SearchProductsAndVerifyCartAfterLogin extends BaseTest {
+import java.util.List;
+
+public class TestCase_20_SearchProductsAndVerifyCartAfterLogin1 extends BaseTest {
     SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
+    String searchedProduct="Men";
     @Test
-    public void testCase_20SearchProductsAndVerifyCartAfterLogin() {
-        //Verify that home page is visible successfull
+    public void testCase2002(){
         String homePageTitle = pages.getHomePage().getHomePageHomeTitle();
-        softAssert.assertEquals(homePageTitle, "Home",
-                "ERROR-->Test Case 20 : Verify home page is visible");
+        softAssert.assertEquals(homePageTitle, "Home");
 
-        //Click on 'Products' button
+        // Click on 'Products' button
         pages.getHomePage().clickProductButton();
 
         //Verify user is navigated to ALL PRODUCTS page successfully
-        boolean allProductsText = pages.getProductsPage().allProductTitleIsVisible();
-        softAssert.assertTrue(allProductsText,"ERROR-->Test Case 20 : Verify all products page is visible");
+     softAssert.assertEquals(Driver.getDriver().getCurrentUrl(),"https://automationexercise.com/products");
 
-
-        //Enter product name in search input and click search button
-        pages.getProductsPage().setSearchProductBox("Men");
+     // Enter product name in search input and click search button
+        pages.getProductsPage().setSearchProductBox(searchedProduct);
         pages.getProductsPage().clickSearchButton();
-
 
         //Verify 'SEARCHED PRODUCTS' is visible
         String searchedProductsText = pages.getProductsPage().getSearchedProductsMessage();
         softAssert.assertEquals(searchedProductsText, "SEARCHED PRODUCTS",
-           "ERROR-->Test Case 20 : Verify 'SEARCHED PRODUCTS' is visible");
-
-        //boolean searchedProductsText = pages.getProductsPage().isVisibleSearchedProductsMessage();
-        //softAssert.assertTrue(searchedProductsText);
-
+                "ERROR-->Test Case 20 : Verify 'SEARCHED PRODUCTS' is visible");
 
         //Verify all the products related to search are visible
-        boolean menProducts = pages.getProductsPage().isMenProductsVisible();
-        softAssert.assertTrue(menProducts);
+        List<String> listOfSearchedProducts = pages.getProductsPage().getListOfSearchedProducts();
+        softAssert.assertTrue(listOfSearchedProducts.stream().allMatch(s->s.contains(searchedProduct)),
+                "ERROR-->Test Case 20 : Verify all the products related to search are visible");
 
         //Add those products to cart
-        pages.getProductsPage().clickAddToCartButton1();
-        pages.getProductsPage().clickContinueShoppingButton();
-        pages.getProductsPage().clickAddToCartButton5();
-        pages.getProductsPage().clickContinueShoppingButton();
+        pages.getProductsPage().clickAddToCartOfAllProducts();
 
         //Click 'Cart' button and verify that products are visible in cart
         pages.getProductsPage().clickCartButton();
 
-        boolean areProductsVisible = pages.getViewCartPage().areProductsVisible();
-        softAssert.assertTrue(areProductsVisible);
+        List<String> selectedProducts = pages.getViewCartPage().getSelectedProductsName();
+        softAssert.assertEquals(listOfSearchedProducts,selectedProducts,
+                "ERROR-->Test Case 20 : Verify searched products names are related");
 
         //Click 'Signup / Login' button and submit login details
         pages.getViewCartPage().clickSignUpLoginButton();
+        //signupApp("neverEve@gmail.com","1234");
 
-        signupApp("neverEve@gmail.com","1234");
-
-        pages.getViewCartPage().clickSignUpLoginButton();
+        //pages.getViewCartPage().clickSignUpLoginButton();
         pages.getLoginPage().setLoginEmailAddress("neverEve@gmail.com");
         pages.getLoginPage().setLoginPassword("1234");
         pages.getLoginPage().clickLoginButton();
@@ -65,14 +57,14 @@ public class TestCase_20_SearchProductsAndVerifyCartAfterLogin extends BaseTest 
         //Again, go to Cart page
         pages.getHomePage().clickCartButton();
 
-
         //Verify that those products are visible in cart after login as well
-        boolean afterLoginAreProductsVisible = pages.getViewCartPage().areProductsVisible();
-        softAssert.assertTrue(afterLoginAreProductsVisible);
+        List<String> selectedProducts2 = pages.getViewCartPage().getSelectedProductsName();
+        softAssert.assertEquals(listOfSearchedProducts,selectedProducts2,
+                "ERROR-->Test Case 20 : Verify searched products names are related");
 
-        softAssert.assertAll();
 
     }
+
     public  void signupApp(String email,String password) {
         pages.getLoginPage().setSignupNewUserName("Belatrix");
         pages.getLoginPage().setSignupEmailAddressBox(email);
@@ -101,5 +93,4 @@ public class TestCase_20_SearchProductsAndVerifyCartAfterLogin extends BaseTest 
         pages.getAccountCreatedPage().clickContinueButton();
         pages.getHomePage().clickLogOutButton();
     }
-
 }

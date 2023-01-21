@@ -1,13 +1,8 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utilities.BrowserUtils;
-import utilities.Driver;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class HomePage extends BasePage {
 
@@ -44,14 +39,14 @@ public class HomePage extends BasePage {
     @FindBy(css = ".fa.fa-arrow-circle-o-right")
     private WebElement arrowButton;
 
-    @FindBy(xpath = "//div[@class='alert-success alert']")
+    @FindBy(id = "success-subscribe")
     private WebElement youHaveBeenSuccessfullySubscribedMessage;
 
     @FindBy(xpath = "//body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]")
     private WebElement cartButton;
 
-    @FindBy(css = "a[href='/product_details/2']")
-    private WebElement viewProductButton;
+    @FindBy(css = "a[href='/product_details/1']")
+    private WebElement viewProductOfFirstButton;
 
     @FindBy(xpath = "//i[@class='fa fa-angle-up']")
     private WebElement scrollUpButton;
@@ -164,8 +159,8 @@ public class HomePage extends BasePage {
         cartButton.click();
     }
 
-    public void clickViewProductButton() {
-        viewProductButton.click();
+    public void clickViewProductOfFirstButton() {
+        viewProductOfFirstButton.click();
     }
 
     public void clickScrollUpButton() {

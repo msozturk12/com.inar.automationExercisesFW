@@ -120,7 +120,6 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         pages.getViewCartPage().setSubscribeEmail("supernova@gmail.com");
         pages.getViewCartPage().clickArrowButton();
 
-        BrowserUtils.wait(2);
         //Verify success message 'You have been successfully subscribed!' is visible
         String youHaveBeenSuccessfullySubscribedMessage = pages.getViewCartPage().getYouHaveBeenSuccessfullySubscribedMessageViewCartPage();
         softAssert.assertEquals(youHaveBeenSuccessfullySubscribedMessage, "You have been successfully subscribed!",
@@ -137,10 +136,10 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         softAssert.assertEquals(homePageTitle, "Home", "ERROR : Test Case 13 - Verify that home page is visible successfull\n");
 
         //Click 'View Product' for any product on home page
-        pages.getHomePage().clickViewProductButton();
+        pages.getHomePage().clickViewProductOfFirstButton();
 
         //Verify product detail is opened
-        softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://automationexercise.com/product_details/2",
+        softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://automationexercise.com/product_details/1",
                 "ERROR : Test Case 13 - Verify product detail is opened\n");
 
         // Increase quantity to 4
@@ -193,8 +192,6 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         pages.getSignupPage().setCity("Lille");
         pages.getSignupPage().setZipCode("321004");
         pages.getSignupPage().setMobileNumber("16a5698956");
-        String address = pages.getSignupPage().getAddress1();
-        //String name = pages.getSignupPage().getFirstName();
 
 
         // Click 'Create Account button'
@@ -203,7 +200,7 @@ public class TestCase_07_08_10_11_13_23_25_26VerifyTests extends BaseTest {
         //Verify that 'ACCOUNT CREATED!' is visible
         String accountCreatedMessage = pages.getAccountCreatedPage().getAccountCreatedMessage();
         softAssert.assertEquals(accountCreatedMessage, "ACCOUNT CREATED!",
-                "ERROR : Test Case 1 - Verify that 'ACCOUNT CREATED!' is visible\n");
+                "ERROR : Test Case 23 - Verify that 'ACCOUNT CREATED!' is visible\n");
 
         //Click 'Continue' button
         pages.getAccountCreatedPage().clickContinueButton();

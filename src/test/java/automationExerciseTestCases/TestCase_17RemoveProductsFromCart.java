@@ -1,9 +1,11 @@
 package automationExerciseTestCases;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import utilities.Driver;
 
 public class TestCase_17RemoveProductsFromCart extends BaseTest {
+    SoftAssert softAssert = new SoftAssert(); // We should use soft assertion because in this test case we have multiple cases to test
 
     @Test
     public void testCase_17RemoveProductsFromCart() throws InterruptedException {

@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Oca 20, 2023 01:06:12 PM</span>
+                    <span class="badge badge-primary">Oca 21, 2023 10:12:07 AM</span>
                 </a>
             </li>
         </ul>
@@ -131,19 +131,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">TestCase_1_Register_User</p>
-							<p class="duration text-sm">0h 0m 25s+128ms</p>
-							<span class="datetime">13:06:21 PM</span>
+							<p class="name">testcase_24Download_Invoice_After_Purchase_Order</p>
+							<p class="duration text-sm">0h 1m 8s+970ms</p>
+							<span class="datetime">10:12:17 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">TestCase_1_Register_User</h5>
-									<span class='badge badge-success'>01.20.2023 13:06:21</span>
-									<span class='badge badge-danger'>01.20.2023 13:06:47</span>
-									<span class='badge badge-default'>0h 0m 25s+128ms</span>
+									<h5 class="test-status text-pass">testcase_24Download_Invoice_After_Purchase_Order</h5>
+									<span class='badge badge-success'>01.21.2023 10:12:17</span>
+									<span class='badge badge-danger'>01.21.2023 10:13:26</span>
+									<span class='badge badge-default'>0h 1m 8s+970ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,7 +160,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:06:47</td>
+				<td>10:13:26</td>
 				<td>
 						Test Passed
 				</td>
@@ -170,28 +170,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="2"
+				<li class="test-item"  status="fail" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">Test_Case_5_RegisterUserWithExistingEmail</p>
-							<p class="duration text-sm">0h 0m 1s+513ms</p>
-							<span class="datetime">13:06:47 PM</span>
+							<p class="name">testCase_20SearchProductsAndVerifyCartAfterLogin</p>
+							<p class="duration text-sm">0h 0m 17s+279ms</p>
+							<span class="datetime">10:13:26 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Test_Case_5_RegisterUserWithExistingEmail</h5>
-									<span class='badge badge-success'>01.20.2023 13:06:47</span>
-									<span class='badge badge-danger'>01.20.2023 13:06:48</span>
-									<span class='badge badge-default'>0h 0m 1s+513ms</span>
+									<h5 class="test-status text-fail">testCase_20SearchProductsAndVerifyCartAfterLogin</h5>
+									<span class='badge badge-success'>01.21.2023 10:13:26</span>
+									<span class='badge badge-danger'>01.21.2023 10:13:44</span>
+									<span class='badge badge-default'>0h 0m 17s+279ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -207,39 +207,104 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:06:48</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:13:44</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='id_gender2']"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4163f87d1e0bc2b30befb56c30274540
+*** Element info: {Using=xpath, value=//*[@id='id_gender2']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at pages.SignUpPage.selectTitleWomen(SignUpPage.java:91)
+	at automationExerciseTestCases.TestCase_20_SearchProductsAndVerifyCartAfterLogin.signupApp(TestCase_20_SearchProductsAndVerifyCartAfterLogin.java:81)
+	at automationExerciseTestCases.TestCase_20_SearchProductsAndVerifyCartAfterLogin.testCase_20SearchProductsAndVerifyCartAfterLogin(TestCase_20_SearchProductsAndVerifyCartAfterLogin.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_20SearchProductsAndVerifyCartAfterLogin.png' src='C:\Seleniumm\automationexercise\reports\testCase_20SearchProductsAndVerifyCartAfterLogin.png'>
+			</a>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="3"
+				<li class="test-item"  status="fail" test-id="3"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">test_Case_2_LoginUserWithCorrectEmailAndPassword</p>
-							<p class="duration text-sm">0h 0m 8s+618ms</p>
-							<span class="datetime">13:06:48 PM</span>
+							<p class="name">testCase18_ViewCategoryProducts</p>
+							<p class="duration text-sm">0h 0m 7s+78ms</p>
+							<span class="datetime">10:13:44 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">test_Case_2_LoginUserWithCorrectEmailAndPassword</h5>
-									<span class='badge badge-success'>01.20.2023 13:06:48</span>
-									<span class='badge badge-danger'>01.20.2023 13:06:57</span>
-									<span class='badge badge-default'>0h 0m 8s+618ms</span>
+									<h5 class="test-status text-fail">testCase18_ViewCategoryProducts</h5>
+									<span class='badge badge-success'>01.21.2023 10:13:44</span>
+									<span class='badge badge-danger'>01.21.2023 10:13:51</span>
+									<span class='badge badge-default'>0h 0m 7s+78ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -255,14 +320,78 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:06:57</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:13:51</td>
 				<td>
-						Test Passed
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#accordian"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4163f87d1e0bc2b30befb56c30274540
+*** Element info: {Using=css selector, value=#accordian}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.isDisplayed(Unknown Source)
+	at pages.HomePage.areCategoriesVisible(HomePage.java:175)
+	at automationExerciseTestCases.TestCase_18_19ViewTest.testCase18_ViewCategoryProducts(TestCase_18_19ViewTest.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase18_ViewCategoryProducts.png' src='C:\Seleniumm\automationexercise\reports\testCase18_ViewCategoryProducts.png'>
+			</a>
+		</li>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -275,19 +404,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">test_Case_3_LoginUserWithIncorrectEmailAndPassword</p>
-							<p class="duration text-sm">0h 0m 2s+513ms</p>
-							<span class="datetime">13:06:57 PM</span>
+							<p class="name">testCase19_ViewCartBrandProducts</p>
+							<p class="duration text-sm">0h 0m 9s+331ms</p>
+							<span class="datetime">10:13:51 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">test_Case_3_LoginUserWithIncorrectEmailAndPassword</h5>
-									<span class='badge badge-success'>01.20.2023 13:06:57</span>
-									<span class='badge badge-danger'>01.20.2023 13:06:59</span>
-									<span class='badge badge-default'>0h 0m 2s+513ms</span>
+									<h5 class="test-status text-pass">testCase19_ViewCartBrandProducts</h5>
+									<span class='badge badge-success'>01.21.2023 10:13:51</span>
+									<span class='badge badge-danger'>01.21.2023 10:14:01</span>
+									<span class='badge badge-default'>0h 0m 9s+331ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -304,7 +433,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:06:59</td>
+				<td>10:14:01</td>
 				<td>
 						Test Passed
 				</td>
@@ -323,19 +452,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">test_Case_4_LogOutUser</p>
-							<p class="duration text-sm">0h 0m 6s+640ms</p>
-							<span class="datetime">13:06:59 PM</span>
+							<p class="name">testCase_17RemoveProductsFromCart</p>
+							<p class="duration text-sm">0h 0m 5s+192ms</p>
+							<span class="datetime">10:14:01 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">test_Case_4_LogOutUser</h5>
-									<span class='badge badge-success'>01.20.2023 13:06:59</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:06</span>
-									<span class='badge badge-default'>0h 0m 6s+640ms</span>
+									<h5 class="test-status text-pass">testCase_17RemoveProductsFromCart</h5>
+									<span class='badge badge-success'>01.21.2023 10:14:01</span>
+									<span class='badge badge-danger'>01.21.2023 10:14:06</span>
+									<span class='badge badge-default'>0h 0m 5s+192ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -352,7 +481,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:07:06</td>
+				<td>10:14:06</td>
 				<td>
 						Test Passed
 				</td>
@@ -371,19 +500,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">test_Case_06_ContactUsForm</p>
-							<p class="duration text-sm">0h 0m 6s+130ms</p>
-							<span class="datetime">13:07:06 PM</span>
+							<p class="name">testCase_14PlaceOrderRegisterWhileCheckout</p>
+							<p class="duration text-sm">0h 0m 28s+11ms</p>
+							<span class="datetime">10:14:06 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">test_Case_06_ContactUsForm</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:06</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:12</span>
-									<span class='badge badge-default'>0h 0m 6s+130ms</span>
+									<h5 class="test-status text-pass">testCase_14PlaceOrderRegisterWhileCheckout</h5>
+									<span class='badge badge-success'>01.21.2023 10:14:06</span>
+									<span class='badge badge-danger'>01.21.2023 10:14:34</span>
+									<span class='badge badge-default'>0h 0m 28s+11ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -400,7 +529,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:07:12</td>
+				<td>10:14:34</td>
 				<td>
 						Test Passed
 				</td>
@@ -419,19 +548,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_07_VerifyTestCasesPage</p>
-							<p class="duration text-sm">0h 0m 0s+768ms</p>
-							<span class="datetime">13:07:12 PM</span>
+							<p class="name">testCase_15PlaceOrderRegisterBeforeCheckout</p>
+							<p class="duration text-sm">0h 0m 24s+710ms</p>
+							<span class="datetime">10:14:34 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_07_VerifyTestCasesPage</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:12</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:13</span>
-									<span class='badge badge-default'>0h 0m 0s+768ms</span>
+									<h5 class="test-status text-pass">testCase_15PlaceOrderRegisterBeforeCheckout</h5>
+									<span class='badge badge-success'>01.21.2023 10:14:34</span>
+									<span class='badge badge-danger'>01.21.2023 10:14:59</span>
+									<span class='badge badge-default'>0h 0m 24s+710ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -448,7 +577,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:07:13</td>
+				<td>10:14:59</td>
 				<td>
 						Test Passed
 				</td>
@@ -467,19 +596,19 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_08_VerifyAllProductsAndProductDetailPage</p>
-							<p class="duration text-sm">0h 0m 4s+218ms</p>
-							<span class="datetime">13:07:13 PM</span>
+							<p class="name">testCase_16PlaceOrderLoginBeforeCheckout</p>
+							<p class="duration text-sm">0h 0m 31s+121ms</p>
+							<span class="datetime">10:14:59 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_08_VerifyAllProductsAndProductDetailPage</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:13</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:17</span>
-									<span class='badge badge-default'>0h 0m 4s+218ms</span>
+									<h5 class="test-status text-pass">testCase_16PlaceOrderLoginBeforeCheckout</h5>
+									<span class='badge badge-success'>01.21.2023 10:14:59</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:30</span>
+									<span class='badge badge-default'>0h 0m 31s+121ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -496,7 +625,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:07:17</td>
+				<td>10:15:30</td>
 				<td>
 						Test Passed
 				</td>
@@ -506,28 +635,28 @@
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="9"
+				<li class="test-item"  status="pass" test-id="9"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_10_VerifySubscriptionInHomePage</p>
-							<p class="duration text-sm">0h 0m 0s+410ms</p>
-							<span class="datetime">13:07:17 PM</span>
+							<p class="name">TestCase_12_Add_ProductsIn_Cart</p>
+							<p class="duration text-sm">0h 0m 4s+304ms</p>
+							<span class="datetime">10:15:30 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">testCase_10_VerifySubscriptionInHomePage</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:17</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:17</span>
-									<span class='badge badge-default'>0h 0m 0s+410ms</span>
+									<h5 class="test-status text-pass">TestCase_12_Add_ProductsIn_Cart</h5>
+									<span class='badge badge-success'>01.21.2023 10:15:30</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:34</span>
+									<span class='badge badge-default'>0h 0m 4s+304ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -543,80 +672,39 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:17</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:15:34</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
-	ERROR : Test Case 10 - Verify success message 'You have been successfully subscribed!' is visible expected [You have been successfully subscribed!] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_10_VerifySubscriptionInHomePage(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_10_VerifySubscriptionInHomePage.png' src='C:\Seleniumm\automationexercise\reports\testCase_10_VerifySubscriptionInHomePage.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="10"
+				<li class="test-item"  status="pass" test-id="10"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_11_VerifySubscriptionInCartPage</p>
-							<p class="duration text-sm">0h 0m 2s+972ms</p>
-							<span class="datetime">13:07:18 PM</span>
+							<p class="name">TestCase_21_Add_ReviewOnProducts</p>
+							<p class="duration text-sm">0h 0m 4s+613ms</p>
+							<span class="datetime">10:15:34 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">testCase_11_VerifySubscriptionInCartPage</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:18</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:21</span>
-									<span class='badge badge-default'>0h 0m 2s+972ms</span>
+									<h5 class="test-status text-pass">TestCase_21_Add_ReviewOnProducts</h5>
+									<span class='badge badge-success'>01.21.2023 10:15:34</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:39</span>
+									<span class='badge badge-default'>0h 0m 4s+613ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -632,56 +720,14 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:21</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:15:39</td>
 				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
-	ERROR : Test Case 10 - Verify success message 'You have been successfully subscribed!' is visible expected [You have been successfully subscribed!] but found [],
-	ERROR : Test Case 11 - Verify success message 'You have been successfully subscribed! expected [You have been successfully subscribed!] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_11_VerifySubscriptionInCartPage(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:129)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_11_VerifySubscriptionInCartPage.png' src='C:\Seleniumm\automationexercise\reports\testCase_11_VerifySubscriptionInCartPage.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
@@ -694,535 +740,9 @@
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_13_VerifyProductQuantityInCart</p>
-							<p class="duration text-sm">0h 0m 7s+122ms</p>
-							<span class="datetime">13:07:21 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-fail">testCase_13_VerifyProductQuantityInCart</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:21</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:28</span>
-									<span class='badge badge-default'>0h 0m 7s+122ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:28</td>
-				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/product_details/2']"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ca99bccd55cf5877e981cdd0c1730c
-*** Element info: {Using=css selector, value=a[href='/product_details/2']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.HomePage.clickViewProductButton(HomePage.java:168)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_13_VerifyProductQuantityInCart(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:140)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_13_VerifyProductQuantityInCart.png' src='C:\Seleniumm\automationexercise\reports\testCase_13_VerifyProductQuantityInCart.png'>
-			</a>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="12"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">testCase_23_VerifyAddressDetailsInCheckoutPage</p>
-							<p class="duration text-sm">0h 0m 20s+834ms</p>
-							<span class="datetime">13:07:28 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-fail">testCase_23_VerifyAddressDetailsInCheckoutPage</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:28</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:49</span>
-									<span class='badge badge-default'>0h 0m 20s+834ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:49</td>
-				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
-	ERROR : Test Case 10 - Verify success message 'You have been successfully subscribed!' is visible expected [You have been successfully subscribed!] but found [],
-	ERROR : Test Case 11 - Verify success message 'You have been successfully subscribed! expected [You have been successfully subscribed!] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_23_VerifyAddressDetailsInCheckoutPage(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:249)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_23_VerifyAddressDetailsInCheckoutPage.png' src='C:\Seleniumm\automationexercise\reports\testCase_23_VerifyAddressDetailsInCheckoutPage.png'>
-			</a>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="13"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</p>
-							<p class="duration text-sm">0h 0m 0s+294ms</p>
-							<span class="datetime">13:07:49 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-fail">testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:49</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:49</span>
-									<span class='badge badge-default'>0h 0m 0s+294ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:49</td>
-				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
-	ERROR : Test Case 10 - Verify success message 'You have been successfully subscribed!' is visible expected [You have been successfully subscribed!] but found [],
-	ERROR : Test Case 11 - Verify success message 'You have been successfully subscribed! expected [You have been successfully subscribed!] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:272)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.png' src='C:\Seleniumm\automationexercise\reports\testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.png'>
-			</a>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="14"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</p>
-							<p class="duration text-sm">0h 0m 0s+154ms</p>
-							<span class="datetime">13:07:50 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-fail">testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:50</span>
-									<span class='badge badge-danger'>01.20.2023 13:07:50</span>
-									<span class='badge badge-default'>0h 0m 0s+154ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:07:50</td>
-				<td>
-						<textarea disabled class="code-block">java.lang.AssertionError: The following asserts failed:
-	ERROR : Test Case 10 - Verify success message 'You have been successfully subscribed!' is visible expected [You have been successfully subscribed!] but found [],
-	ERROR : Test Case 11 - Verify success message 'You have been successfully subscribed! expected [You have been successfully subscribed!] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:295)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.png' src='C:\Seleniumm\automationexercise\reports\testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.png'>
-			</a>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="15"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">TestCase_09_Search_Product</p>
-							<p class="duration text-sm">0h 0m 13s+578ms</p>
-							<span class="datetime">13:07:51 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">TestCase_09_Search_Product</h5>
-									<span class='badge badge-success'>01.20.2023 13:07:51</span>
-									<span class='badge badge-danger'>01.20.2023 13:08:04</span>
-									<span class='badge badge-default'>0h 0m 13s+578ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:08:04</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="16"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">TestCase_12_Add_ProductsIn_Cart</p>
-							<p class="duration text-sm">0h 0m 5s+986ms</p>
-							<span class="datetime">13:08:04 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">TestCase_12_Add_ProductsIn_Cart</h5>
-									<span class='badge badge-success'>01.20.2023 13:08:04</span>
-									<span class='badge badge-danger'>01.20.2023 13:08:10</span>
-									<span class='badge badge-default'>0h 0m 5s+986ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:08:10</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="pass" test-id="17"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">TestCase_21_Add_ReviewOnProducts</p>
-							<p class="duration text-sm">0h 0m 3s+814ms</p>
-							<span class="datetime">13:08:10 PM</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">TestCase_21_Add_ReviewOnProducts</h5>
-									<span class='badge badge-success'>01.20.2023 13:08:10</span>
-									<span class='badge badge-danger'>01.20.2023 13:08:14</span>
-									<span class='badge badge-default'>0h 0m 3s+814ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:08:14</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="18"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
 							<p class="name">testCase_22_AddToCartFromRecommendedItems</p>
-							<p class="duration text-sm">0h 0m 7s+60ms</p>
-							<span class="datetime">13:08:14 PM</span>
+							<p class="duration text-sm">0h 0m 9s+75ms</p>
+							<span class="datetime">10:15:39 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -1230,9 +750,9 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">testCase_22_AddToCartFromRecommendedItems</h5>
-									<span class='badge badge-success'>01.20.2023 13:08:14</span>
-									<span class='badge badge-danger'>01.20.2023 13:08:21</span>
-									<span class='badge badge-default'>0h 0m 7s+60ms</span>
+									<span class='badge badge-success'>01.21.2023 10:15:39</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:48</span>
+									<span class='badge badge-default'>0h 0m 9s+75ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1249,7 +769,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:08:21</td>
+				<td>10:15:48</td>
 				<td>
 						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='recommended items']"}
   (Session info: chrome=109.0.5414.75)
@@ -1257,8 +777,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ca99bccd55cf5877e981cdd0c1730c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4163f87d1e0bc2b30befb56c30274540
 *** Element info: {Using=xpath, value=//h2[normalize-space()='recommended items']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -1277,7 +797,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy5.isDisplayed(Unknown Source)
-	at pages.HomePage.isVisibleRecommendedItemsText(HomePage.java:209)
+	at pages.HomePage.isVisibleRecommendedItemsText(HomePage.java:204)
 	at automationExerciseTestCases.TestCase_12_21_22AddTest.testCase_22_AddToCartFromRecommendedItems(TestCase_12_21_22AddTest.java:103)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1323,7 +843,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="19"
+				<li class="test-item"  status="pass" test-id="12"
 					author=""
 					tag=""
 					device="">
@@ -1332,19 +852,19 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_14PlaceOrderRegisterWhileCheckout</p>
-							<p class="duration text-sm">0h 0m 31s+9ms</p>
-							<span class="datetime">13:08:21 PM</span>
+							<p class="name">TestCase_09_Search_Product</p>
+							<p class="duration text-sm">0h 0m 5s+973ms</p>
+							<span class="datetime">10:15:48 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_14PlaceOrderRegisterWhileCheckout</h5>
-									<span class='badge badge-success'>01.20.2023 13:08:21</span>
-									<span class='badge badge-danger'>01.20.2023 13:08:52</span>
-									<span class='badge badge-default'>0h 0m 31s+9ms</span>
+									<h5 class="test-status text-pass">TestCase_09_Search_Product</h5>
+									<span class='badge badge-success'>01.21.2023 10:15:48</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:54</span>
+									<span class='badge badge-default'>0h 0m 5s+973ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1361,7 +881,407 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:08:52</td>
+				<td>10:15:54</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_07_VerifyTestCasesPage</p>
+							<p class="duration text-sm">0h 0m 0s+624ms</p>
+							<span class="datetime">10:15:54 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_07_VerifyTestCasesPage</h5>
+									<span class='badge badge-success'>01.21.2023 10:15:54</span>
+									<span class='badge badge-danger'>01.21.2023 10:15:55</span>
+									<span class='badge badge-default'>0h 0m 0s+624ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:15:55</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_08_VerifyAllProductsAndProductDetailPage</p>
+							<p class="duration text-sm">0h 0m 6s+193ms</p>
+							<span class="datetime">10:15:55 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_08_VerifyAllProductsAndProductDetailPage</h5>
+									<span class='badge badge-success'>01.21.2023 10:15:55</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:01</span>
+									<span class='badge badge-default'>0h 0m 6s+193ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:16:01</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_10_VerifySubscriptionInHomePage</p>
+							<p class="duration text-sm">0h 0m 0s+382ms</p>
+							<span class="datetime">10:16:01 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_10_VerifySubscriptionInHomePage</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:01</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:01</span>
+									<span class='badge badge-default'>0h 0m 0s+382ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:16:01</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="16"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_11_VerifySubscriptionInCartPage</p>
+							<p class="duration text-sm">0h 0m 1s+233ms</p>
+							<span class="datetime">10:16:01 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_11_VerifySubscriptionInCartPage</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:01</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:02</span>
+									<span class='badge badge-default'>0h 0m 1s+233ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:16:02</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="fail" test-id="17"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_13_VerifyProductQuantityInCart</p>
+							<p class="duration text-sm">0h 0m 12s+644ms</p>
+							<span class="datetime">10:16:02 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-fail">testCase_13_VerifyProductQuantityInCart</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:02</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:15</span>
+									<span class='badge badge-default'>0h 0m 12s+644ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>10:16:15</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[normalize-space()='4'])[1]"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4163f87d1e0bc2b30befb56c30274540
+*** Element info: {Using=xpath, value=(//button[normalize-space()='4'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.getText(Unknown Source)
+	at pages.ViewCartPage.getQuantityValue(ViewCartPage.java:94)
+	at automationExerciseTestCases.TestCase_07_08_10_11_13_23_25_26VerifyTests.testCase_13_VerifyProductQuantityInCart(TestCase_07_08_10_11_13_23_25_26VerifyTests.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_13_VerifyProductQuantityInCart.png' src='C:\Seleniumm\automationexercise\reports\testCase_13_VerifyProductQuantityInCart.png'>
+			</a>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="18"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_23_VerifyAddressDetailsInCheckoutPage</p>
+							<p class="duration text-sm">0h 0m 19s+850ms</p>
+							<span class="datetime">10:16:15 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_23_VerifyAddressDetailsInCheckoutPage</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:15</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:35</span>
+									<span class='badge badge-default'>0h 0m 19s+850ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:16:35</td>
+				<td>
+						Test Passed
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="19"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</p>
+							<p class="duration text-sm">0h 0m 0s+263ms</p>
+							<span class="datetime">10:16:35 AM</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:35</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:35</span>
+									<span class='badge badge-default'>0h 0m 0s+263ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:16:35</td>
 				<td>
 						Test Passed
 				</td>
@@ -1380,19 +1300,19 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_15PlaceOrderRegisterBeforeCheckout</p>
-							<p class="duration text-sm">0h 0m 25s+165ms</p>
-							<span class="datetime">13:08:52 PM</span>
+							<p class="name">testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</p>
+							<p class="duration text-sm">0h 0m 0s+423ms</p>
+							<span class="datetime">10:16:35 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_15PlaceOrderRegisterBeforeCheckout</h5>
-									<span class='badge badge-success'>01.20.2023 13:08:52</span>
-									<span class='badge badge-danger'>01.20.2023 13:09:17</span>
-									<span class='badge badge-default'>0h 0m 25s+165ms</span>
+									<h5 class="test-status text-pass">testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:35</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:36</span>
+									<span class='badge badge-default'>0h 0m 0s+423ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1409,7 +1329,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:09:17</td>
+				<td>10:16:36</td>
 				<td>
 						Test Passed
 				</td>
@@ -1428,19 +1348,19 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_16PlaceOrderLoginBeforeCheckout</p>
-							<p class="duration text-sm">0h 0m 28s+372ms</p>
-							<span class="datetime">13:09:17 PM</span>
+							<p class="name">test_Case_06_ContactUsForm</p>
+							<p class="duration text-sm">0h 0m 7s+806ms</p>
+							<span class="datetime">10:16:36 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_16PlaceOrderLoginBeforeCheckout</h5>
-									<span class='badge badge-success'>01.20.2023 13:09:17</span>
-									<span class='badge badge-danger'>01.20.2023 13:09:46</span>
-									<span class='badge badge-default'>0h 0m 28s+372ms</span>
+									<h5 class="test-status text-pass">test_Case_06_ContactUsForm</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:36</span>
+									<span class='badge badge-danger'>01.21.2023 10:16:44</span>
+									<span class='badge badge-default'>0h 0m 7s+806ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1457,7 +1377,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:09:46</td>
+				<td>10:16:44</td>
 				<td>
 						Test Passed
 				</td>
@@ -1476,19 +1396,19 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_17RemoveProductsFromCart</p>
-							<p class="duration text-sm">0h 0m 3s+881ms</p>
-							<span class="datetime">13:09:46 PM</span>
+							<p class="name">test_Case_2_LoginUserWithCorrectEmailAndPassword</p>
+							<p class="duration text-sm">0h 0m 16s+279ms</p>
+							<span class="datetime">10:16:44 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase_17RemoveProductsFromCart</h5>
-									<span class='badge badge-success'>01.20.2023 13:09:46</span>
-									<span class='badge badge-danger'>01.20.2023 13:09:50</span>
-									<span class='badge badge-default'>0h 0m 3s+881ms</span>
+									<h5 class="test-status text-pass">test_Case_2_LoginUserWithCorrectEmailAndPassword</h5>
+									<span class='badge badge-success'>01.21.2023 10:16:44</span>
+									<span class='badge badge-danger'>01.21.2023 10:17:00</span>
+									<span class='badge badge-default'>0h 0m 16s+279ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1505,7 +1425,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:09:50</td>
+				<td>10:17:00</td>
 				<td>
 						Test Passed
 				</td>
@@ -1515,28 +1435,28 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="23"
+				<li class="test-item"  status="pass" test-id="23"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase18_ViewCategoryProducts</p>
-							<p class="duration text-sm">0h 0m 7s+75ms</p>
-							<span class="datetime">13:09:50 PM</span>
+							<p class="name">test_Case_3_LoginUserWithIncorrectEmailAndPassword</p>
+							<p class="duration text-sm">0h 0m 1s+406ms</p>
+							<span class="datetime">10:17:00 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">testCase18_ViewCategoryProducts</h5>
-									<span class='badge badge-success'>01.20.2023 13:09:50</span>
-									<span class='badge badge-danger'>01.20.2023 13:09:57</span>
-									<span class='badge badge-default'>0h 0m 7s+75ms</span>
+									<h5 class="test-status text-pass">test_Case_3_LoginUserWithIncorrectEmailAndPassword</h5>
+									<span class='badge badge-success'>01.21.2023 10:17:00</span>
+									<span class='badge badge-danger'>01.21.2023 10:17:01</span>
+									<span class='badge badge-default'>0h 0m 1s+406ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1552,78 +1472,14 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:09:57</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:17:01</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#accordian"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ca99bccd55cf5877e981cdd0c1730c
-*** Element info: {Using=css selector, value=#accordian}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.isDisplayed(Unknown Source)
-	at pages.HomePage.areCategoriesVisible(HomePage.java:180)
-	at automationExerciseTestCases.TestCase_18_19ViewTest.testCase18_ViewCategoryProducts(TestCase_18_19ViewTest.java:14)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase18_ViewCategoryProducts.png' src='C:\Seleniumm\automationexercise\reports\testCase18_ViewCategoryProducts.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
@@ -1636,19 +1492,19 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase19_ViewCartBrandProducts</p>
-							<p class="duration text-sm">0h 0m 9s+359ms</p>
-							<span class="datetime">13:09:57 PM</span>
+							<p class="name">test_Case_4_LogOutUser</p>
+							<p class="duration text-sm">0h 0m 6s+222ms</p>
+							<span class="datetime">10:17:01 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">testCase19_ViewCartBrandProducts</h5>
-									<span class='badge badge-success'>01.20.2023 13:09:57</span>
-									<span class='badge badge-danger'>01.20.2023 13:10:06</span>
-									<span class='badge badge-default'>0h 0m 9s+359ms</span>
+									<h5 class="test-status text-pass">test_Case_4_LogOutUser</h5>
+									<span class='badge badge-success'>01.21.2023 10:17:01</span>
+									<span class='badge badge-danger'>01.21.2023 10:17:08</span>
+									<span class='badge badge-default'>0h 0m 6s+222ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1665,7 +1521,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>13:10:06</td>
+				<td>10:17:08</td>
 				<td>
 						Test Passed
 				</td>
@@ -1675,28 +1531,28 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="25"
+				<li class="test-item"  status="pass" test-id="25"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testCase_20SearchProductsAndVerifyCartAfterLogin</p>
-							<p class="duration text-sm">0h 0m 21s+605ms</p>
-							<span class="datetime">13:10:06 PM</span>
+							<p class="name">TestCase_1_Register_User</p>
+							<p class="duration text-sm">0h 0m 18s+465ms</p>
+							<span class="datetime">10:17:08 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">testCase_20SearchProductsAndVerifyCartAfterLogin</h5>
-									<span class='badge badge-success'>01.20.2023 13:10:06</span>
-									<span class='badge badge-danger'>01.20.2023 13:10:28</span>
-									<span class='badge badge-default'>0h 0m 21s+605ms</span>
+									<h5 class="test-status text-pass">TestCase_1_Register_User</h5>
+									<span class='badge badge-success'>01.21.2023 10:17:08</span>
+									<span class='badge badge-danger'>01.21.2023 10:17:26</span>
+									<span class='badge badge-default'>0h 0m 18s+465ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1712,104 +1568,39 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:10:28</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:17:26</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='id_gender2']"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ca99bccd55cf5877e981cdd0c1730c
-*** Element info: {Using=xpath, value=//*[@id='id_gender2']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.SignUpPage.selectTitleWomen(SignUpPage.java:91)
-	at automationExerciseTestCases.TestCase_20_SearchProductsAndVerifyCartAfterLogin.signupApp(TestCase_20_SearchProductsAndVerifyCartAfterLogin.java:75)
-	at automationExerciseTestCases.TestCase_20_SearchProductsAndVerifyCartAfterLogin.testCase_20SearchProductsAndVerifyCartAfterLogin(TestCase_20_SearchProductsAndVerifyCartAfterLogin.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testCase_20SearchProductsAndVerifyCartAfterLogin.png' src='C:\Seleniumm\automationexercise\reports\testCase_20SearchProductsAndVerifyCartAfterLogin.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
-				<li class="test-item"  status="fail" test-id="26"
+				<li class="test-item"  status="pass" test-id="26"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar fail-bg">
-						<i class="fa fa-times text-white"></i>
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">testcase_24Download_Invoice_After_Purchase_Order</p>
-							<p class="duration text-sm">0h 0m 7s+118ms</p>
-							<span class="datetime">13:10:28 PM</span>
+							<p class="name">Test_Case_5_RegisterUserWithExistingEmail</p>
+							<p class="duration text-sm">0h 0m 2s+537ms</p>
+							<span class="datetime">10:17:26 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-fail">testcase_24Download_Invoice_After_Purchase_Order</h5>
-									<span class='badge badge-success'>01.20.2023 13:10:28</span>
-									<span class='badge badge-danger'>01.20.2023 13:10:35</span>
-									<span class='badge badge-default'>0h 0m 7s+118ms</span>
+									<h5 class="test-status text-pass">Test_Case_5_RegisterUserWithExistingEmail</h5>
+									<span class='badge badge-success'>01.21.2023 10:17:26</span>
+									<span class='badge badge-danger'>01.21.2023 10:17:29</span>
+									<span class='badge badge-default'>0h 0m 2s+537ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -1825,78 +1616,14 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>13:10:35</td>
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:17:29</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[7]"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BHPNA0R', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\mesut\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 93ca99bccd55cf5877e981cdd0c1730c
-*** Element info: {Using=xpath, value=(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[7]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.HomePage.clickAddToCartButton7(HomePage.java:225)
-	at automationExerciseTestCases.TestCase_24DownloadInvoiceAfterPurchaseOrder.testcase_24Download_Invoice_After_Purchase_Order(TestCase_24DownloadInvoiceAfterPurchaseOrder.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
+						Test Passed
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Seleniumm\automationexercise\reports\testcase_24Download_Invoice_After_Purchase_Order.png' src='C:\Seleniumm\automationexercise\reports\testcase_24Download_Invoice_After_Purchase_Order.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
@@ -1930,7 +1657,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">1</span>
 					</a>
 				</li>
 			</ul>
@@ -1940,87 +1667,8 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">java.lang.AssertionError</p>
-							<p class="duration text-sm">5 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>java.lang.AssertionError</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:07:17 PM</td>
-									<td class='linked' test-id='9'>
-										testCase_10_VerifySubscriptionInHomePage
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:07:18 PM</td>
-									<td class='linked' test-id='10'>
-										testCase_11_VerifySubscriptionInCartPage
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:07:28 PM</td>
-									<td class='linked' test-id='12'>
-										testCase_23_VerifyAddressDetailsInCheckoutPage
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:07:49 PM</td>
-									<td class='linked' test-id='13'>
-										testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:07:50 PM</td>
-									<td class='linked' test-id='14'>
-										testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
 							<p class="name">org.openqa.selenium.NoSuchElementException</p>
-							<p class="duration text-sm">5 tests</p>
+							<p class="duration text-sm">4 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -2042,41 +1690,8 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>13:07:21 PM</td>
-									<td class='linked' test-id='11'>
-										testCase_13_VerifyProductQuantityInCart
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:08:14 PM</td>
-									<td class='linked' test-id='18'>
-										testCase_22_AddToCartFromRecommendedItems
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:09:50 PM</td>
-									<td class='linked' test-id='23'>
-										testCase18_ViewCategoryProducts
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class='status-avatar fail-bg'>
-											<i class="fa fa-times text-white"></i>
-										</div>
-									</td>
-									<td>13:10:06 PM</td>
-									<td class='linked' test-id='25'>
+									<td>10:13:26 AM</td>
+									<td class='linked' test-id='2'>
 										testCase_20SearchProductsAndVerifyCartAfterLogin
 									</td>
 								</tr>
@@ -2086,9 +1701,31 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>13:10:28 PM</td>
-									<td class='linked' test-id='26'>
-										testcase_24Download_Invoice_After_Purchase_Order
+									<td>10:13:44 AM</td>
+									<td class='linked' test-id='3'>
+										testCase18_ViewCategoryProducts
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>10:15:39 AM</td>
+									<td class='linked' test-id='11'>
+										testCase_22_AddToCartFromRecommendedItems
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>10:16:02 AM</td>
+									<td class='linked' test-id='17'>
+										testCase_13_VerifyProductQuantityInCart
 									</td>
 								</tr>
 							</tbody>
@@ -2126,12 +1763,12 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='61,538%'>
-						<b>16</b> tests passed
+					<div><small data-tooltip='84,615%'>
+						<b>22</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='38,462%'><b>10</b> tests failed, 
+						<small data-tooltip='15,385%'><b>4</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -2149,9 +1786,9 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='61,538%'><b>16</b> events passed</small></div>
+					<div><small data-tooltip='84,615%'><b>22</b> events passed</small></div>
 					<div>
-						<small data-tooltip='38,462%'><b>10</b> events failed, 
+						<small data-tooltip='15,385%'><b>4</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -2169,7 +1806,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 							<h2 class="font-size-28 font-weight-light mt-3">26</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>61,54%</span>
+							<span>84,62%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -2185,7 +1822,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Oca 20, 2023 01:06:12 PM</h4>
+							<h4 class="font-weight-light mt-4">Oca 21, 2023 10:12:07 AM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -2201,7 +1838,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 4m 22s+823ms</h4>
+							<h4 class="font-weight-light mt-4">0h 5m 21s+980ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -2255,13 +1892,13 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 <script>
 	var statusGroup = {
 	    parentCount: 26,
-		passParent: 16,
-		failParent: 10,
+		passParent: 22,
+		failParent: 4,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 10,
+		exceptionsParent: 4,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -2283,8 +1920,8 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 26,
-		passEvents: 16,
-		failEvents: 10,
+		passEvents: 22,
+		failEvents: 4,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -2296,7 +1933,7 @@ Session ID: 93ca99bccd55cf5877e981cdd0c1730c
 </script>
 <script>
 	var timeline = {
-	        "TestCase_1_Register_User":25.128,"Test_Case_5_RegisterUserWithExistingEmail":1.513,"test_Case_2_LoginUserWithCorrectEmailAndPassword":8.618,"test_Case_3_LoginUserWithIncorrectEmailAndPassword":2.513,"test_Case_4_LogOutUser":6.64,"test_Case_06_ContactUsForm":6.13,"testCase_07_VerifyTestCasesPage":0.768,"testCase_08_VerifyAllProductsAndProductDetailPage":4.218,"testCase_10_VerifySubscriptionInHomePage":0.41,"testCase_11_VerifySubscriptionInCartPage":2.972,"testCase_13_VerifyProductQuantityInCart":7.122,"testCase_23_VerifyAddressDetailsInCheckoutPage":20.834,"testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality":0.294,"testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality":0.154,"TestCase_09_Search_Product":13.578,"TestCase_12_Add_ProductsIn_Cart":5.986,"TestCase_21_Add_ReviewOnProducts":3.814,"testCase_22_AddToCartFromRecommendedItems":7.06,"testCase_14PlaceOrderRegisterWhileCheckout":31.009,"testCase_15PlaceOrderRegisterBeforeCheckout":25.165,"testCase_16PlaceOrderLoginBeforeCheckout":28.372,"testCase_17RemoveProductsFromCart":3.881,"testCase18_ViewCategoryProducts":7.075,"testCase19_ViewCartBrandProducts":9.359,"testCase_20SearchProductsAndVerifyCartAfterLogin":21.605,"testcase_24Download_Invoice_After_Purchase_Order":7.118
+	        "testcase_24Download_Invoice_After_Purchase_Order":68.97,"testCase_20SearchProductsAndVerifyCartAfterLogin":17.279,"testCase18_ViewCategoryProducts":7.078,"testCase19_ViewCartBrandProducts":9.331,"testCase_17RemoveProductsFromCart":5.192,"testCase_14PlaceOrderRegisterWhileCheckout":28.011,"testCase_15PlaceOrderRegisterBeforeCheckout":24.71,"testCase_16PlaceOrderLoginBeforeCheckout":31.121,"TestCase_12_Add_ProductsIn_Cart":4.304,"TestCase_21_Add_ReviewOnProducts":4.613,"testCase_22_AddToCartFromRecommendedItems":9.075,"TestCase_09_Search_Product":5.973,"testCase_07_VerifyTestCasesPage":0.624,"testCase_08_VerifyAllProductsAndProductDetailPage":6.193,"testCase_10_VerifySubscriptionInHomePage":0.382,"testCase_11_VerifySubscriptionInCartPage":1.233,"testCase_13_VerifyProductQuantityInCart":12.644,"testCase_23_VerifyAddressDetailsInCheckoutPage":19.85,"testCase_25VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality":0.263,"testCase_26VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality":0.423,"test_Case_06_ContactUsForm":7.806,"test_Case_2_LoginUserWithCorrectEmailAndPassword":16.279,"test_Case_3_LoginUserWithIncorrectEmailAndPassword":1.406,"test_Case_4_LogOutUser":6.222,"TestCase_1_Register_User":18.465,"Test_Case_5_RegisterUserWithExistingEmail":2.537
 	};
 </script>
                 </div>
